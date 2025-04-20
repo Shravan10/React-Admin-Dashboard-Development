@@ -19,8 +19,9 @@ const Users = () => {
           <StateCard name="New Users Today" icon={UserPlus} value="98520" color="#10B981"/>
           <StateCard name="Churn Rate" icon={UserX} value="2.4%" color="#EF4444"/>
        </motion.div>
+       <UsersTable/>
       </main>
-
+    
   </div>
   )
 }
