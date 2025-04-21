@@ -7,6 +7,7 @@ import { UserCheck, UserIcon, UserPlus, UserX } from 'lucide-react';
 import StateCard from '../component/common/StateCard';
 import UserGrowth from '../userss/UserGrowth';
 import UserActivityHeatMap from '../userss/UserActivityHeatMap';
+import UserDemographicsChart from '../userss/UserDemographicsChart';
 
 const Users = () => {
   return (
@@ -23,6 +24,7 @@ const Users = () => {
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 mt-8">
           <UserGrowth/>
           <UserActivityHeatMap/>
+          <UserDemographicsChart/>
       </div>
       </main>
     
