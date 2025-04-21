@@ -19,10 +19,8 @@ const UsersTable = () => {
 
  const handleSearch=(e)=>{
   const term=e.target.value.toLowerCase();
-  console.log(term);
   setSearchTerm(term);
   const filtered=userData.filter((user)=>user.name.toLowerCase().includes(term) || user.email.toLowerCase().includes(term));
-  console.log(filtered);
   setFilterUsers(filtered);
  }
 
