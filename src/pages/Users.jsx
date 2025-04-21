@@ -3,11 +3,10 @@ import React from 'react'
 import {motion} from "framer-motion";
 import Header from '../component/common/Header';
 import UsersTable from '../userss/UsersTable';
-import SalesTrendChart from '../component/products/SalesTrendChart';
-import CategoryDistributionChart from '../overview/CateogoryDistributionChart';
 import { UserCheck, UserIcon, UserPlus, UserX } from 'lucide-react';
 import StateCard from '../component/common/StateCard';
 import UserGrowth from '../userss/UserGrowth';
+import UserActivityHeatMap from '../userss/UserActivityHeatMap';
 
 const Users = () => {
   return (
@@ -23,6 +22,7 @@ const Users = () => {
        <UsersTable/>
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 mt-8">
           <UserGrowth/>
+          <UserActivityHeatMap/>
       </div>
       </main>
     
