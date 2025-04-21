@@ -7,6 +7,7 @@ import SalesTrendChart from '../component/products/SalesTrendChart';
 import CategoryDistributionChart from '../overview/CateogoryDistributionChart';
 import { UserCheck, UserIcon, UserPlus, UserX } from 'lucide-react';
 import StateCard from '../component/common/StateCard';
+import UserGrowth from '../userss/UserGrowth';
 
 const Users = () => {
   return (
@@ -20,6 +21,9 @@ const Users = () => {
           <StateCard name="Churn Rate" icon={UserX} value="2.4%" color="#EF4444"/>
        </motion.div>
        <UsersTable/>
+      <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 mt-8">
+          <UserGrowth/>
+      </div>
       </main>
     
   </div>
