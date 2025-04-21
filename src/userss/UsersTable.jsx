@@ -13,8 +13,18 @@ const userData = [
 ];
 
 const UsersTable = () => {
- 
- console.log(userData);
+ const [searchTerm,setSearchTerm] = useState("");
+ const [filteredUsers,setFilterUsers]= useState(userData);
+
+
+ const handleSearch=(e)=>{
+  const term=e.target.value.toLowerCase();
+  console.log(term);
+  setSearchTerm(term);
+  const filtered=userData.filter((user)=>user.name.toLowerCase().includes(term) || user.email.toLowerCase().includes(term));
+  console.log(filtered);
+  setFilterUsers(filtered);
+ }
 
   return (
     <>
@@ -30,6 +40,8 @@ const UsersTable = () => {
             <input
               type="text"
               placeholder="Search Users..."
+              value={searchTerm}
+              onChange={handleSearch}
               className="bg-gray-700 text-white placeholder-gray-400 rounded-lg pl-10 pr-4 py-2 focus:outline-none focus:ring-2 focus:ring-blue:500"
             />
             <Search
@@ -60,7 +72,7 @@ const UsersTable = () => {
               </tr>
             </thead>
             <tbody className="divide-y divide-gray-700">
-              {userData.map((user)=>(
+              {filteredUsers.map((user)=>(
                 <motion.tr
                 key={user.id}
                 initial={{ opacity: 0 }}
