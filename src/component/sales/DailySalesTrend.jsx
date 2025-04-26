@@ -21,7 +21,7 @@ const dailySalesData = [
 ];
 export const DailySalesTrend = () => {
   return (
-    <div>
+ 
       <motion.div
         className="bg-gray-800 bg-opacity-50 backdrop-blur-md shadow-lg rounded-xl p-6 border border-gray-700"
         initial={{ opacity: 0, y: 20 }}
@@ -49,6 +49,5 @@ export const DailySalesTrend = () => {
           </ResponsiveContainer>
         </div>
       </motion.div>
-    </div>
   );
 };
