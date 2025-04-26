@@ -2,20 +2,28 @@ import React from "react";
 // eslint-disable-next-line no-unused-vars
 import { motion } from "framer-motion";
 import { useState } from "react";
-import { Area, AreaChart, CartesianGrid, ResponsiveContainer, Tooltip, XAxis, YAxis} from "recharts";
+import {
+  Area,
+  AreaChart,
+  CartesianGrid,
+  ResponsiveContainer,
+  Tooltip,
+  XAxis,
+  YAxis,
+} from "recharts";
 
-const monthlySalesData=[
-    { month: "Jan", sales: 4000 },
-	{ month: "Feb", sales: 3000 },
-	{ month: "Mar", sales: 5000 },
-	{ month: "Apr", sales: 4500 },
-	{ month: "May", sales: 6000 },
-	{ month: "Jun", sales: 5500 },
-	{ month: "Jul", sales: 7000 }
+const monthlySalesData = [
+  { month: "Jan", sales: 4000 },
+  { month: "Feb", sales: 3000 },
+  { month: "Mar", sales: 5000 },
+  { month: "Apr", sales: 4500 },
+  { month: "May", sales: 6000 },
+  { month: "Jun", sales: 5500 },
+  { month: "Jul", sales: 7000 },
 ];
 
 const SalesOverviewChart = () => {
-    const [selectedTimeRange,setSelectedTimeRange] = useState("This Month");
+  const [selectedTimeRange, setSelectedTimeRange] = useState("This Month");
   return (
     <motion.div
       className="bg-gray-800 bg-opacity-50 backdrop-blur-md p-6 shadow-lg rounded-xl border border-gray-700 mb-8"
@@ -28,7 +36,7 @@ const SalesOverviewChart = () => {
         <select
           className="bg-gray-700 text-white rounded-md px-3 py-1 focus:outline-none focus:ring-2 focus:ring-blue-500"
           value={selectedTimeRange}
-          onChange={(e)=>setSelectedTimeRange(e.target.value)}
+          onChange={(e) => setSelectedTimeRange(e.target.value)}
         >
           <option>This Week</option>
           <option>This Month</option>
@@ -37,16 +45,27 @@ const SalesOverviewChart = () => {
         </select>
       </div>
       <div className="w-full h-80">
-<ResponsiveContainer>
-    <AreaChart data={monthlySalesData}>
-    <CartesianGrid strokeDasharray="3 3" stroke="#374151"/>
-    <XAxis dataKey="month" stroke="#9CA3AF"/>
-    <YAxis stroke="#9CA3AF"/>
-    <Tooltip contentStyle={{ backgroundColor: "rgba(31, 41, 55, 0.8)", borderColor: "#4B5563" }}
-							itemStyle={{ color: "#E5E7EB" }}/>
-    <Area type="monotone" dataKey="sales" stroke="#8B5CF6" fill="#9B5CF6" fillOpacity={0.3}/>
-    </AreaChart>
-</ResponsiveContainer>
+        <ResponsiveContainer>
+          <AreaChart data={monthlySalesData}>
+            <CartesianGrid strokeDasharray="3 3" stroke="#374151" />
+            <XAxis dataKey="month" stroke="#9CA3AF" />
+            <YAxis stroke="#9CA3AF" />
+            <Tooltip
+              contentStyle={{
+                backgroundColor: "rgba(31, 41, 55, 0.8)",
+                borderColor: "#4B5563",
+              }}
+              itemStyle={{ color: "#E5E7EB" }}
+            />
+            <Area
+              type="monotone"
+              dataKey="sales"
+              stroke="#8B5CF6"
+              fill="#9B5CF6"
+              fillOpacity={0.3}
+            />
+          </AreaChart>
+        </ResponsiveContainer>
       </div>
     </motion.div>
   );

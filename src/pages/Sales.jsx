@@ -5,6 +5,8 @@ import { motion } from 'framer-motion'
 import StateCard from '../component/common/StateCard'
 import { CreditCard, DollarSign, ShoppingCart, TrendingUp } from "lucide-react";
 import SalesOverviewChart from '../component/sales/SalesOverviewChart';
+import SalesByCategoryChart from '../component/sales/SalesByCategoryChart';
+import { DailySalesTrend } from '../component/sales/DailySalesTrend';
 
 const Sales = () => {
   return (
@@ -23,6 +25,12 @@ const Sales = () => {
        <StateCard name="Sales Growth" icon={CreditCard} value="10%" color="#EF4444"/>
       </motion.div>
       <SalesOverviewChart/>
+
+      <div className='grid grid-cols-1 lg:grid-cols-2 gap-8 mb-8'>
+        <SalesByCategoryChart/>
+        <DailySalesTrend/>
+
+      </div>
     </main>
     </div>
   )
