@@ -4,6 +4,7 @@ import Header from '../component/common/Header'
 import { motion } from 'framer-motion'
 import StateCard from '../component/common/StateCard'
 import { CreditCard, DollarSign, ShoppingCart, TrendingUp } from "lucide-react";
+import SalesOverviewChart from '../component/sales/SalesOverviewChart';
 
 const Sales = () => {
   return (
@@ -21,6 +22,7 @@ const Sales = () => {
        <StateCard name="Conversion Rate" icon={TrendingUp} value="4.50%" color="#F59E0B"/>
        <StateCard name="Sales Growth" icon={CreditCard} value="10%" color="#EF4444"/>
       </motion.div>
+      <SalesOverviewChart/>
     </main>
     </div>
   )
