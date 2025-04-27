@@ -6,6 +6,7 @@ import StateCard from "../component/common/StateCard";
 import { CheckCircle, Clock, DollarSign, ShoppingBag } from "lucide-react";
 import DailyOrders from "../component/orders/DailyOrders";
 import OrderDistributution from "../component/orders/OrderDistributation";
+import OrderTable from "../component/orders/OrderTable";
 
 
 const Orders = () => {
@@ -29,6 +30,7 @@ const Orders = () => {
           <DailyOrders/>
           <OrderDistributution/>
         </div>
+        <OrderTable/>
       </main>
     </div>
   );
