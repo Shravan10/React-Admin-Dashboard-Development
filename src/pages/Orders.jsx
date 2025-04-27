@@ -5,7 +5,8 @@ import { motion } from "framer-motion";
 import StateCard from "../component/common/StateCard";
 import { CheckCircle, Clock, DollarSign, ShoppingBag } from "lucide-react";
 import DailyOrders from "../component/orders/DailyOrders";
-import OrderDistributution from "../component/orders/OrderDistributution";
+import OrderDistributution from "../component/orders/OrderDistributation";
+
 
 const Orders = () => {
   return (
