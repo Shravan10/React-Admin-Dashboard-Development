@@ -5,6 +5,7 @@ import RevenueChart from '../component/analytics/RevenueChart'
 import ChannelPerformance from '../component/analytics/ChannelPerformance'
 import ProductPerformance from '../component/analytics/ProductPerformance'
 import UserRetention from '../component/analytics/UserRetention'
+import CustomerSegmentation from '../component/analytics/CustomerSegmentation'
 
 const Analytics = () => {
   return (
@@ -17,6 +18,7 @@ const Analytics = () => {
         <ChannelPerformance/>
         <ProductPerformance/>
         <UserRetention/>
+        <CustomerSegmentation/>
        </div>
       </main>
     </div>
