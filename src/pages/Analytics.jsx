@@ -1,7 +1,6 @@
 import React from 'react'
 import Header from '../component/common/Header'
 import OverviewCard from '../component/analytics/OverviewCard'
-import RevenueChart from '../component/analytics/RevenueChart'
 
 const Analytics = () => {
   return (
