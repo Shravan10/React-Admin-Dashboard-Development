@@ -2,12 +2,12 @@ import React from 'react'
 // eslint-disable-next-line no-unused-vars
 import {motion} from "framer-motion";
 import Header from '../component/common/Header';
-import UsersTable from '../users/UsersTable';
+import UsersTable from '../component/users/UsersTable';
 import { UserCheck, UserIcon, UserPlus, UserX } from 'lucide-react';
 import StateCard from '../component/common/StateCard';
-import UserGrowth from '../users/UserGrowth';
-import UserActivityHeatMap from '../users/UserActivityHeatMap';
-import UserDemographicsChart from '../users/UserDemographicsChart';
+import UserGrowth from '../component/users/UserGrowth';
+import UserActivityHeatMap from '../component/users/UserActivityHeatMap';
+import UserDemographicsChart from '../component/users/UserDemographicsChart';
 
 const Users = () => {
   return (

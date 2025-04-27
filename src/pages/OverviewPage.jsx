@@ -4,9 +4,9 @@ import Header from '../component/common/Header'
 import {motion} from "framer-motion";
 import StateCard from '../component/common/StateCard';
 import { BarChart2, ShoppingBag, Users, Zap } from 'lucide-react';
-import SalesOverviewChart from '../overview/SalesOverviewChart';
-import SalesChannelChart from '../overview/SalesChannelChart';
-import CategoryDistributionChart from '../overview/CateogoryDistributionChart';
+import SalesOverviewChart from '../component/overview/SalesOverviewChart';
+import SalesChannelChart from '../component/overview/SalesChannelChart';
+import CategoryDistributionChart from '../component/overview/CateogoryDistributionChart';
 
 const OverviewPage = () => {
   return (
