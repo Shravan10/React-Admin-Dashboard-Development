@@ -3,6 +3,7 @@ import Header from '../component/common/Header'
 import OverviewCard from '../component/analytics/OverviewCard'
 import RevenueChart from '../component/analytics/RevenueChart'
 import ChannelPerformance from '../component/analytics/ChannelPerformance'
+import ProductPerformance from '../component/analytics/ProductPerformance'
 
 const Analytics = () => {
   return (
@@ -13,6 +14,7 @@ const Analytics = () => {
        <RevenueChart/>
        <div className='grid grid-cols-1 lg:grid-cols-2 gap-8 mb-8'>
         <ChannelPerformance/>
+        <ProductPerformance/>
        </div>
       </main>
     </div>
