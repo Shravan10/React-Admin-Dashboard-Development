@@ -6,6 +6,7 @@ import ChannelPerformance from '../component/analytics/ChannelPerformance'
 import ProductPerformance from '../component/analytics/ProductPerformance'
 import UserRetention from '../component/analytics/UserRetention'
 import CustomerSegmentation from '../component/analytics/CustomerSegmentation'
+import AIPowerInsights from '../component/analytics/AIPowerInsights'
 
 const Analytics = () => {
   return (
@@ -19,7 +20,9 @@ const Analytics = () => {
         <ProductPerformance/>
         <UserRetention/>
         <CustomerSegmentation/>
+        
        </div>
+       <AIPowerInsights/>
       </main>
     </div>
   )
