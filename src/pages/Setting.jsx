@@ -3,6 +3,7 @@ import Header from '../component/common/Header'
 import Profile from '../component/settings/Profile'
 import Notification from '../component/settings/Notification'
 import Security from '../component/settings/Security'
+import ConnectedAccounts from '../component/settings/ConnectedAccounts'
 
 const Setting = () => {
   return (
@@ -12,6 +13,7 @@ const Setting = () => {
      <Profile/>
      <Notification/>
      <Security/>
+     <ConnectedAccounts/>
     </main>
    </div>
   )
