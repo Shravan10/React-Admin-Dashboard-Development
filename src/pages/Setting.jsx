@@ -1,6 +1,7 @@
 import React from 'react'
 import Header from '../component/common/Header'
 import Profile from '../component/settings/Profile'
+import Notification from '../component/settings/Notification'
 
 const Setting = () => {
   return (
@@ -8,6 +9,7 @@ const Setting = () => {
     <Header title="Setting"/>
     <main className="max-w-4xl mx-auto py-6 px-4 lg:px-8">
      <Profile/>
+     <Notification/>
     </main>
    </div>
   )
