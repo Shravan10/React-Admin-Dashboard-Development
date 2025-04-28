@@ -4,6 +4,7 @@ import Profile from '../component/settings/Profile'
 import Notification from '../component/settings/Notification'
 import Security from '../component/settings/Security'
 import ConnectedAccounts from '../component/settings/ConnectedAccounts'
+import DangerZone from '../component/settings/DangerZone'
 
 const Setting = () => {
   return (
@@ -14,6 +15,7 @@ const Setting = () => {
      <Notification/>
      <Security/>
      <ConnectedAccounts/>
+     <DangerZone/>
     </main>
    </div>
   )
